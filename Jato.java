@@ -1,3 +1,3 @@
-public class Jato {
+public class Jato extends Aeronave {
     
 }
