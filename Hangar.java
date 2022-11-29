@@ -48,6 +48,10 @@ public Aviao getAviao(Aviao aviao){
     return aviao;
 }
 
+public void setAviao(Aviao aviao) {
+    this.aviao = aviao;
+}
+
 @Override
 public boolean equals(Object obj){
     if(obj==null || !(obj instanceof Hangar))

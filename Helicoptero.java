@@ -8,16 +8,13 @@ Helicoptero() {
 }
 
 Helicoptero(int id, String marca, String modelo, String cor, int capacidade) {
-    this.id = id;
-    this.marca = marca;
-    this.modelo = modelo;
+    super(id, marca, modelo);
     this.cor = cor;
     this.capacidade = capacidade;
 }
 
 Helicoptero(String marca, String modelo, String cor, int capacidade) {
-    this.marca = marca;
-    this.modelo = modelo;
+    super(marca, modelo);
     this.cor = cor;
     this.capacidade = capacidade;
 }

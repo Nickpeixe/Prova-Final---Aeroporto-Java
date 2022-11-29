@@ -9,9 +9,7 @@ Aviao(){
     }
 
 Aviao(int id , String marca, String modelo, String prefixo, int capacidade, int idCompanhia){
-        this.id = id;
-        this.marca = marca;
-        this.modelo = modelo;
+        super(id, marca, modelo);
         this.prefixo = prefixo;
         this.capacidade = capacidade;
         this.idCompanhia = idCompanhia; 
@@ -19,8 +17,7 @@ Aviao(int id , String marca, String modelo, String prefixo, int capacidade, int 
     } 
 
 Aviao(String marca, String modelo, String prefixo, int capacidade, int idCompanhia){
-        this.marca = marca;
-        this.modelo = modelo;
+        super(marca, modelo);
         this.prefixo = prefixo;
         this.capacidade = capacidade;
         this.idCompanhia = idCompanhia; 
@@ -49,6 +46,14 @@ public int getIdCompanhia(){
 
 public void setIdCompanhia(int idCompanhia){
     this.idCompanhia = idCompanhia;
+}
+
+public Companhia getCompanhia(){
+    return companhia;
+}
+
+public void setCompanhia(Companhia companhia){
+    this.companhia = companhia;
 }
 
 @Override
