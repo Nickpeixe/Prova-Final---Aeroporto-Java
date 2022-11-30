@@ -1,3 +1,5 @@
+package models;
+
 public class Jato extends Aeronave{
 
     private String cor;

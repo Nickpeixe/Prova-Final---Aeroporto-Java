@@ -1,3 +1,5 @@
+package models;
+
 public class Companhia {
 
     private int id;

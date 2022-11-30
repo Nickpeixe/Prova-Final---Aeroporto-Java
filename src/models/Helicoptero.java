@@ -1,3 +1,4 @@
+package models;
 
 public class Helicoptero extends Aeronave {
     private String cor;

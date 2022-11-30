@@ -1,3 +1,5 @@
+package models;
+
 public class Hangar {
 
     private int id;
@@ -9,15 +11,17 @@ Hangar(){
 
 }
 
-Hangar(int id, String local, int idAviao){
+Hangar(int id, String local, int idAviao, Aviao aviao){
     this.id = id;
     this.local = local;
     this.idAviao = idAviao;
+    this.aviao = aviao;
 }
 
-Hangar(String local, int idAviao){
+Hangar(String local, int idAviao, Aviao aviao){
     this.local = local;
     this.idAviao = idAviao;
+    this.aviao = aviao;
 }
 
 public int getId(){

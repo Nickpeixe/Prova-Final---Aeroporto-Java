@@ -1,3 +1,5 @@
+package models;
+
 public class Aeronave{
     private int id;
     private String marca;
