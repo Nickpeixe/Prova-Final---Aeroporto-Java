@@ -1,4 +1,7 @@
 package models;
+import java.sql.PreparedStatement;
+import DAO.DAO;
+
 
 public class Aeronave{
     private int id;
@@ -7,10 +10,12 @@ public class Aeronave{
     
 Aeronave(){
 }
-Aeronave(int id, String marca, String modelo){
+Aeronave(int id, String marca, String modelo) throws exception{
     this.id=id;
     this.marca=marca;
     this.modelo=modelo;
+
+    PreparedStatement prep = DAO.createConnection().prepareStatement ("INSERT INTO aeronae (ID_AERONAVE, MARCA, MODELO) VALUES (?, ?, ?);");
 }
 Aeronave(String marca, String modelo){
     this.marca=marca;
