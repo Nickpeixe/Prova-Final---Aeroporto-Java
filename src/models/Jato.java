@@ -8,7 +8,7 @@ public class Jato extends Aeronave{
     public Jato(){
 
     }
-    public Jato(int id,String marca, String modelo, String cor, int velocidade) {
+    public Jato(int id,String marca, String modelo, String cor, int velocidade) throws Exception {
         super( id, marca,  modelo);
         this.cor=cor;
         this.velocidade=velocidade;
